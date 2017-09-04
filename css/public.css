@@ -1,0 +1,434 @@
+/*公用样式*/
+.layout{
+	width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: '微软雅黑';
+}
+.layout a:hover{
+	color: #e13a68;
+}
+/*头部样式*/
+header{
+	width: 100%;
+	height: 176px;
+	margin: 0 auto;
+	font-size: 12px;
+	/*overflow: hidden;*/
+}
+	/*头部上半部分*/
+.headerUp{
+	height: 38px;
+	background: #f3f3f3;
+	line-height: 38px;
+}
+.headerUp a{
+	color:#000;
+}
+.headerUp li{
+	float: left;
+	margin-right: 10px;
+}
+.headRightInfo{
+	float: right;
+}
+.headRightInfo li{
+	float: left;
+	margin-left: 20px;
+}
+.headRightInfo li:nth-child(1) i{color:#e13a68 }
+.perseonInfo,#orderToStore,#jewelryBoxCount{
+	color: #e13a68;
+}
+
+	/*头部下半部分*/
+.headerDown{
+	height: 100px;
+}
+.headerLogo{
+	float: left;
+}
+.searchBox{
+	width: 260px;
+	height: 50px;
+	float: left;
+	margin-left: 35%;
+	padding-top: 25px;
+
+	transform: translateX(-50%);
+}
+.searchIpt{
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1px solid #6d6c6c;
+}
+.searchBtn{
+	width: 60px;
+	height: 30px;
+	margin: 0 auto;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	background: #6d6c6c;
+}
+.keyword{
+	display: inline-block;
+}
+.keyword li{
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	color: #aaa;
+}
+.keyword li:hover{
+	color: #e13a68;
+}
+.QRcode{
+	float: right;
+}
+
+/*导航*/
+nav{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	/*overflow: hidden;*/
+	/*text-align: center;*/
+}
+nav .layout{
+	overflow: visible;
+}
+.subNav{
+	width: 200px;
+	height: 38px;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 15px;
+	background: #c11e20;
+	margin-right: 25px;
+	position: relative;
+	cursor: pointer;
+}
+.subNavInfo{
+	width: 215px;
+	height: 430px;
+	left: 0px;
+	position: absolute;
+	background: #383333;
+	z-index:9;
+	display: none;
+}
+.subNavInfo ul{
+	padding: 15px;
+	/*display: block;*/
+	/*margin-bottom: 15px;*/
+}
+.subNavInfo ul h6{
+	line-height: 15px;
+	width: 60px;
+	float: left;
+	height: 100%;
+	padding-left: 5px;
+	/*text-align: center;*/
+}
+.subNavInfo ul:nth-child(1){height: 60px;}
+.subNavInfo ul:nth-child(2){height: 60px;background: #312d2d}
+.subNavInfo ul:nth-child(3){height: 35px;}
+.subNavInfo ul:nth-child(4){height: 35px;background: #312d2d}
+.subNavInfo ul:nth-child(5){height: 10px;}
+.subNavInfo ul:nth-child(6){height: 10px;background: #312d2d}
+.subNavInfo ul:nth-child(7){height: 10px;}
+.subNavInfo ul:nth-child(7) li{
+	width: 85px;
+}
+.subNavInfo ul li{
+	width: 60px;
+	height: 25px;
+	/*text-align: center;*/
+	line-height: 15px;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+}
+.subNavInfo ul:hover{
+	background: #000;
+}
+.subNavInfo a{
+	color: #fff;
+}
+.subNavInfo a:hover{
+	color: #e13a68;
+}
+.mainNav{
+	float: left;
+}
+.mainNav li{
+	float: left;
+	margin: 0 25px;
+	font-weight: bold;
+}
+.mainNav li a{
+	font-size: 14px;
+	color: #000;
+}
+.mainNav li a:hover{
+	color: #e13a68;
+}
+.navPhone{
+	float: right;
+}
+
+/*体验中心*/
+.experienceCenter{
+	width: 100%;
+	height: 258px;
+	margin-top: 20px;
+}
+.siteNav{
+	height: 29px;
+	line-height: 29px;
+	border-bottom:1px solid #8a8a8a;
+}
+.siteNav .title{
+	float: left;
+	font-size: 18px;
+	display: inline-block;
+	padding-left: 15px;
+}
+.sites{
+	float: right;
+}
+.sites li{
+	width: 60px;
+	text-align: center;
+	float: left;
+	/*margin: 0 20px;*/
+	font-weight: bold;
+	cursor: pointer;
+	/*background: url(../image/public/sitesEnterBg.jpg) no-repeat center bottom;*/
+/*	border-bottom:3px solid yellow;
+	box-sizing: border-box;*/
+}
+.sites li:hover{
+	color: red;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background: #4c4c4c;
+}
+.sitesShow{
+	width: 1178px;
+	height: 225px;
+	position: relative;
+	border: 1px solid #6b6b6b;
+	background: url(../image/public/mapBg.jpg) no-repeat -50px;
+}
+.sitesShow img{
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+.centerSites{
+	color: #000;
+}
+.centerSites:hover{
+	color: #e13a68;
+}
+.sitesShow .imgActive{
+	display: block;
+}
+.sitesInfo{
+	width: 650px;
+	float: left;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+.sitesInfo>h2{
+	/*font-weight: normal;*/
+	margin-bottom: 20px;
+}
+.sitesInfo>p{
+	margin-bottom: 15px;
+}
+
+/*底部导航*/
+.footNavInfo{
+	height: 160px;
+	background: #e9e9e9;
+	border-top: 1px solid #ccc;
+}
+.footNavInfo i{
+	position: absolute;
+	left:-22px;
+}
+.footNavInfo>.layout{
+	display: flex;
+	padding-top: 15px;
+	justify-content: space-between;
+}
+.footNavInfo ul{
+	width: 180px;
+	padding-left: 55px;
+	/*padding-top: 30px;*/
+	border-left: 1px solid #ccc;
+	height: 130px;
+}
+.footNavInfo ul:nth-child(1) i{color: blue}
+.footNavInfo ul:nth-child(2) i{color: red}
+.footNavInfo ul:nth-child(3) i{color: green}
+.footNavInfo ul:nth-child(4) i{color: teal}
+.footNavInfo ul:nth-child(5) i{color: orange}
+.footNavInfo ul:last-child{
+	border-right: 1px solid #ccc;
+}
+.footNavInfo h6{
+	padding-top: 25px;
+	position: relative;
+}
+.footNavInfo li{
+	margin-top: 10px;
+}
+.footNavInfo li a{
+	color: #555;
+}
+.footNavInfo li a:hover{
+	color: red;
+}
+
+/*copy*/
+.copy{
+	width: 100%;
+	height: 96px;
+	background: #333;
+	color: #b9b9b9;
+}
+.copy .layout{
+	position: relative;
+}
+.companyAddress,.copyInfo{
+	margin-top: 20px;
+}
+.Phone24{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+.Phone24 span{
+	display: block;
+	font-size: 26px;
+}
+
+/*safe*/
+.safe{
+	height: 83px;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.safe img{
+	height: 53px;
+	cursor: pointer;
+}
+
+/*friendLink*/
+.friendLink{
+	width: 100%;
+	height: 120px;
+	background: #f0f0f0;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.friendLink .layout{
+	height: 100px;
+	position: relative;
+}
+.friendLink p{
+	height: 50px;
+	float: left;
+	color: #888;
+	line-height: 30px;
+	font-weight: bold;
+}
+.friendLink a{
+	color: #888;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.friendLink a:hover{
+	color: red;
+}
+.friendLink span{
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	color: #888;
+}
+
+/*sideBar*/
+.sideBar{
+	width: 64px;
+	height: 394px;
+	position: fixed;
+	z-index: 9999;
+	right: 0;
+	top: 150px;
+	/*display: none;*/
+}
+.sideBar li{
+	width: 64px;
+	height: 64px;
+	background: #c11e20;
+	margin-bottom: 2px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+}
+.sideBar li:hover{
+	background: rgba(193,30,32,0.7);
+}
+.sideBar i{
+	font-size: 26px;
+}
+.sideBar span{
+	font-size: 12px;
+}
+.sideBar li:nth-child(6){
+	margin-bottom: 0;
+}
+.sideBar li:nth-child(5){
+	position: relative;
+}
+.sideBar li:nth-child(5):hover .sideQRCode{
+	display: block;
+}
+.sideQRCode{
+	width: 139px;
+	height: 139px;
+	background: url(../image/public/sideBarCode.jpg);
+	position: absolute;
+	left: -150px;
+	top: -40px;
+	display: none;
+}
+#sideBarQR{
+	position: absolute;
+	color: #c11e20;
+	transform: rotate(90deg);
+	right: -19px;
+	top: 60px;
+}

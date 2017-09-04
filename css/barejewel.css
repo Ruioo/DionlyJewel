@@ -1,0 +1,39 @@
+.banner{
+	width: 100%;
+	background: #f3f3f3;
+}
+.bareJewelPath{
+	height: 40px;
+	width: 1180px;
+	margin: 0 auto;
+	padding-left: 20px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.bareJewelPath a{
+	color: #000;
+}
+.bareJewelPath a:hover{
+	color: #e13a68;
+}
+.jewelChoose{
+	width: 1180px;
+	margin: 0 auto;
+}
+.jewelChoose a:nth-child(1){
+	border-right:none;
+}
+.jewelChooseTitle{
+	/*display: inline-block;*/
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	color: #000;
+	width: 160px;
+	height: 50px;
+	border: 1px solid #ccc;
+}
+.jewelChooseTitleActive{
+	background: #f5f5f5;
+}

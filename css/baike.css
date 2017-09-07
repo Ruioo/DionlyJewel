@@ -1,0 +1,342 @@
+.main{
+	width: 100%;
+	background: #f1f1f1;
+}
+.main a{
+	color: #000;
+}
+.main a:hover{
+	color: #e13a68;
+}
+.main .layout{
+	display: flex;
+	position: relative;
+	padding-top: 20px;
+	justify-content: space-between;
+}
+.left{
+	width: 200px;
+	left: 0;
+	background: #fff;
+	position: absolute;
+}
+.right{
+	width: 200px;
+	right: 0;
+	overflow: hidden;
+	background: #fff;
+	position: absolute;
+}
+.center{
+	width: 740px;
+	margin:0 auto;
+}
+
+/*center*/
+/*大方块*/
+.ringBaike,.jewelry{
+	background: #fff;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ringBaike .title,.jewelry .title{
+	height: 38px;
+	padding: 0 15px 0 15px;
+	line-height: 38px;
+	/*margin-top: 10px;*/
+	border-bottom: 1px solid #cfd8e6;
+}
+.ringBaike .title span,
+.jewelry .title span{
+	font-weight: bold;
+}
+.ringBaike .title>a,
+.jewelry .title>a{
+	width: 30px;
+	float: right;
+	color: #e13a68;
+	background: none;
+}
+.ringBaike dl,
+.jewelry dl{
+	display: flex;	
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+}
+.ringBaike dt,
+.jewelry dt{
+	margin-right: 20px;
+}
+.ringBaike dd p,
+.jewelry dd p{
+	width: 500px;
+	line-height: 25px;
+}
+.ringBaike dd>a,.jewelry dd>a{
+	color: #e13a68;
+	float: right;
+}
+.ringBaike dd p a,
+.jewelry dd p a{
+	color: #80616e;
+}
+.ringBaike dd span,
+.jewelry dd span{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.ringBaike>p,
+.jewelry>p{
+	height: 37px;
+	padding: 0 15px 0 15px;
+	line-height: 37px;
+}
+.ringBaike>p>a,
+.jewelry>p>a{
+	display: inline-block;
+	width: 330px;
+	padding-left: 20px;
+	border-top:1px dashed #cfd8e6;
+	background: url(../image/baike/liBg.jpg) no-repeat left center;
+}
+
+/*小方块*/
+.metal,
+.gemstone,
+.marry,
+.gift,
+.fit,
+.other{
+	width: 360px;
+	background: #fff;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.metal .title,
+.gemstone .title,
+.marry .title,
+.gift .title,
+.fit .title,
+.other .title{
+	height: 38px;
+	padding: 0 15px 0 15px;
+	line-height: 38px;
+	/*margin-top: 10px;*/
+	border-bottom: 1px solid #cfd8e6;
+}
+.metal .title span,
+.gemstone .title span,
+.marry .title span,
+.gift .title span,
+.fit .title span,
+.other .title span{
+	font-weight: bold;
+}
+.metal .title>a,
+.gemstone .title>a,
+.marry .title>a,
+.gift .title>a,
+.fit .title>a,
+.other .title>a{
+	width: 25px;
+	border:none;
+	padding-left: 0;
+	float: right;
+	background: none;
+}
+.metal dl,
+.gemstone dl,
+.marry dl,
+.gift dl,
+.fit dl,
+.other dl{
+	display: flex;	
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+}
+.metal dt,
+.gemstone dt,
+.marry dt,
+.gift dt,
+.fit dt,
+.other dt{
+	margin-right: 20px;
+}
+.metal dd p,
+.gemstone dd p,
+.marry dd p,
+.gift dd p,
+.fit dd p,
+.other dd p{
+	width: 125px;
+	height: 80px;
+	overflow: hidden;
+	line-height: 25px;
+}
+.metal dd>a,
+.gemstone dd>a,
+.marry dd>a,
+.gift dd>a,
+.fit dd>a,
+.other dd>a{
+	color: #e13a68;
+	float: right;
+}
+.metal dd p a,
+.gemstone dd p a,
+.marry dd p a,
+.gift dd p a,
+.fit dd p a,
+.other dd p a{
+	color: #80616e;
+}
+.metal dd span,
+.gemstone dd span,
+.marry dd span,
+.gift dd span,
+.fit dd span,
+.other dd span{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.metal>p,
+.gemstone>p,
+.marry>p,
+.gift>p,
+.fit>p,
+.other>p{
+	height: 37px;
+	padding: 0 15px 0 15px;
+	line-height: 37px;
+}
+.metal>p>a,
+.gemstone>p>a,
+.marry>p>a,
+.gift>p>a,
+.fit>p>a,
+.other>p>a{
+	display: block;
+	padding-left: 20px;
+	border-top:1px dashed #cfd8e6;
+	background: url(../image/baike/liBg.jpg) no-repeat left center;
+}
+.metal,.marry,.fit{
+	float: left;
+}
+.gemstone,.gift,.other{
+	float: right;
+}
+
+/*left*/
+.bigTitle{
+	padding-left: 15px;
+	height: 38px;
+	font-weight: bold;
+	line-height: 38px;
+	background:linear-gradient(to top,#efefef,#fff);
+}
+.ringbk,
+.jewelbk,
+.metalbk,
+.brandbk,
+.gemstonebk,
+.otherbk,
+.commonbk,
+.howToGift,
+.happyMarry{
+	width: 170px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	border-bottom:1px dashed #db3962;
+}
+.commonbk,.happyMarry{
+	border:none;
+}
+.ringbk li,
+.jewelbk li,
+.metalbk li,
+.brandbk li,
+.gemstonebk li,
+.otherbk li,
+.commonbk li,
+.howToGift li,
+.happyMarry li{
+	width: 80px;
+	display: inline-block;
+	line-height: 25px;
+}
+.ringbk .title,
+.jewelbk .title,
+.metalbk .title,
+.brandbk .title,
+.gemstonebk .title,
+.otherbk .title,
+.commonbk .title,
+.howToGift .title,
+.happyMarry .title{
+	background: #fff6f8;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 14px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.ringbk .title a,
+.jewelbk .title a,
+.metalbk .title a,
+.brandbk .title a,
+.gemstonebk .title a,
+.otherbk .title a,
+.commonbk .title a,
+.howToGift .title a,
+.happyMarry .title a{
+	color: #db3962;
+}
+.left .line,.right .line{
+	width: 100%;
+	height: 20px;
+	background: #f1f1f1;
+}
+.left>a{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.left>a img{
+	margin: 0 auto;
+}
+
+/*right*/
+.bigTitle a{
+	float: right;
+	padding-right: 20px;
+	font-weight: normal;
+}
+.right>a img{
+	width: 170px;
+	/*max-height: 150px;*/
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.right ul{
+	padding: 0 15px 0 15px;
+	line-height: 37px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #db3962;
+}
+.right li{
+	padding-left: 20px;
+	background: url(../image/baike/liBg.jpg) no-repeat left center
+}
+.right .imgLink{
+	display: block;
+	margin-top: 15px;
+	border-bottom: 1px dashed #db3962;
+}

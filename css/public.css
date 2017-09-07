@@ -33,6 +33,9 @@ header{
 .headRightInfo{
 	float: right;
 }
+#leaveLogin{
+	display: none;
+}
 .headRightInfo li{
 	float: left;
 	margin-left: 20px;
@@ -105,16 +108,20 @@ nav .layout{
 	overflow: visible;
 }
 .subNav{
-	width: 200px;
+	width: 185px;
 	height: 38px;
 	float: left;
 	color: #fff;
 	font-size: 14px;
 	padding-left: 15px;
+	padding-right: 15px;
 	background: #c11e20;
 	margin-right: 25px;
 	position: relative;
 	cursor: pointer;
+}
+.subNav i{
+	float: right;
 }
 .subNavInfo{
 	width: 215px;

@@ -19,6 +19,9 @@
 .box .tips{
 	padding-left: 150px;
 	color: #999;
+	height: 20px;
+	color: red;
+	font-size: 12px;
 }
 .box span{
 	display: inline-block;

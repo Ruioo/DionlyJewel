@@ -1,0 +1,511 @@
+.main{
+	width: 100%;
+	font-size: 12px;
+	background: #f1f1f1;
+}
+.main a{
+	color: #000;
+}
+.main a:hover{
+	color: #e13a68;
+}
+/*path*/
+.path{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	display: flex;
+	border-bottom: 1px solid #d2d2d2;
+}
+.path li{
+	width: 40px;
+	text-align: center;
+}
+
+/*商品信息*/
+.info{
+	width: 1150px;
+	height: 602px;
+	padding-left: 35px;
+	padding-top: 30px;
+	margin: 0 auto;
+	background: #fff;
+	border:1px solid #d2d2d2;
+	border-top: 2px solid #ffc0c1;
+}
+.infoLeft{
+	width: 465px;
+	height: 545px;
+	float: left;
+	border-right:1px solid #d2d2d2;
+	text-align: center;
+}
+/*放大镜*/
+.infoLeft .small{
+	height: 440px;
+	width: 420px;
+	text-align: center;
+	position: relative;
+}
+.small>img{
+	margin: 0 auto;
+}
+.move img{
+	position: absolute;
+}
+.small>img,.move>img{
+	width: 420px;
+	height: 420px;
+}
+.move{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	border: 1px solid #d2d2d2;
+}
+.mask{
+	width: 420px;
+	height: 420px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.7);
+}
+.list{
+	width: 425px;
+	display: flex;
+	justify-content: space-around;
+}
+.list>div{
+	width: 360px;
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+}
+.list ul{
+	width: 540px;
+	height: 90px;
+	z-index: 0;
+	position: absolute;
+}
+.list li{
+	width: 84px;
+	height: 84px;
+	float: left;
+	margin-right: 4px;
+	border:1px solid #d2d2d2;
+}
+.list .currentRedBorder{
+	border:1px solid red;
+}
+.list li img{
+	width: 84px;
+	height: 84px;
+}
+.list span{
+	width: 20px;
+	height: 90px;
+	display: inline-block;
+	line-height: 90px;
+	display: none;
+	cursor: pointer;
+}
+.small .big{
+	width: 450px;
+	height: 450px;
+	display: none;
+	position: absolute;
+	left: 430px;
+	top: 0;
+	overflow: hidden;
+	background: #fff;
+}
+.big img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 500px;
+	min-height: 500px;
+	max-width: 600px;
+	max-height: 600px;
+}
+/*右边信息展示*/
+.infoRight{
+	margin-left: 120px;
+	padding-top: 20px;
+	float: left;
+}
+.proMprice{
+	font-size: 14px;
+	color: #888;
+	font-weight: bold;
+	text-decoration: line-through;
+}
+.proSprice{
+	font-size: 14px;
+	color: #db3962;
+	font-weight: bold;
+}
+.infoRight div{
+	margin-bottom: 20px;
+}
+.infoRight div span{
+	display: inline-block;
+	/*height: 10px;*/
+}
+.infoRight div>span:first-child{
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+}
+.infoRight button{
+	padding: 6px;
+	border: none;
+	font-size: 12px;
+	background: #ccc;
+}
+.infoRight .currentButton{
+	background: #db3962;
+	color: #fff;
+}
+.lettering input{
+	width: 60px;
+	margin-right: 20px;
+}
+
+/*加入购物车和收藏*/	
+.twoButton{
+	width: 420px;
+	height: 90px;
+	padding-top: 20px;
+	border-top: 1px dashed #d2d2d2;
+}
+.twoButton>div{
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+.addShopCar{
+	width: 228px;
+	float: left;
+	background-image: linear-gradient(to top, #b16e36, #d29f58);
+}
+.addCollection{
+	width: 125px;
+	float: right;
+	background-image: linear-gradient(to top, #969495, #d4d3d3);
+}
+
+/*下半部分的左边*/
+.bottomLeft{
+	width: 240px;
+	float: left;
+	overflow: hidden;
+}
+.safepromise{
+	border: 1px solid #d2d2d2;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.safepromise .title{
+	height: 35px;
+	border-bottom:1px solid #d2d2d2;
+	color: #db3962;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 35px;
+	padding-left: 10px;
+	background: linear-gradient(to top ,#e1e1e1,#fff);
+}
+/*leftHot*/
+.leftHot{
+	width: 240px;
+	margin-top: 20px;
+	box-sizing: border-box;
+	border: 1px solid #d2d2d2;
+	border-top: none;
+	border-bottom: none;
+}
+.leftHot .title{
+	height: 35px;
+	border-bottom:1px solid #d2d2d2;
+	font-weight: bold;
+	line-height: 35px;
+	padding-left: 10px;
+	background: linear-gradient(to top ,#e1e1e1,#fff);
+}
+.leftHot>div{
+	border-bottom: 1px solid #d2d2d2;
+	background: #fff;
+}
+.leftHot img{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.leftHot p{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+/*bottomRight*/
+.bottomRight{
+	width: 910px;
+	float: right;
+	background: #fff;
+	border:1px solid #d2d2d2;
+	margin-bottom: 30px;
+}
+.infoLayout{
+	width: 710px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.bottomRight>ul{
+	height: 35px;
+	border-bottom:1px solid #d2d2d2;
+	font-weight: bold;
+	line-height: 35px;
+	padding-left: 10px;
+	background: linear-gradient(to top ,#e1e1e1,#fff);
+}
+.bottomRight>ul>li{
+	width: 100px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+.bottomRight .infoLayout>ul>li:hover{
+	color: #db3962;
+}
+.infoBigImg>img{
+	margin: 0 auto;
+}
+
+/*证书*/
+.certificate{
+	margin-bottom: 20px;
+}
+.certificate .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.certificate p{
+	text-indent: 2em;
+	line-height: 25px;
+}
+.certImg img{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/*专业品质*/
+.quality{
+	margin-bottom: 25px;
+}
+.quality>div:nth-child(2){
+	text-indent: 2em;
+}
+.quality .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.quality p{
+	width: 490px;
+	line-height: 25px;
+	margin-right: 15px;
+}
+.quality div{
+	margin-top: 40px;
+}
+.quality p:nth-child(even){
+	float: left;
+}
+.quality p:nth-child(odd){
+	float: right;
+}
+.quality p span{
+	display: block; 
+	font-weight: bold;
+}
+.quality img{
+	display: inline-block;
+}
+
+/*个性刻字*/
+.letterInfo{
+	margin-bottom: 20px;
+}
+.letterInfo .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.letterInfo p{
+	text-indent: 2em;
+	line-height: 25px;
+}
+.letterInfo>img{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/*精美包装*/
+.pack{
+	margin-bottom: 20px;
+	min-height: 330px;
+	position:relative;
+	background: url(../image/product/public/packBg.jpg) no-repeat center 60px;
+}
+.pack .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.pack p{
+	width: 300px;
+	height: 70px;
+	top: 120px;
+	right: 10px;
+	line-height: 25px;
+	position: absolute;
+}
+
+/*放心物流*/
+.logistics{
+	margin-bottom: 20px;
+	min-height: 330px;
+	position:relative;
+	background: url(../image/product/public/logisticsBg.jpg) no-repeat center 70px;
+}
+.logistics .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.logistics p{
+	width: 300px;
+	height: 70px;
+	left: 35px;
+	top: 100px;
+	line-height: 25px;
+	position: absolute;
+}
+
+/*无忧售后*/
+.service{
+	margin-bottom: 40px; 
+	overflow: hidden;
+}
+.service .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.service>p{
+	text-indent: 2em;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.service dl{
+	width: 355px;
+	height: 65px;
+	float: left;
+	margin-top: 20px;
+}
+.service dt{
+	float: left;
+}
+.service dd{
+	padding-left: 85px;
+	padding-right: 20px;
+}
+.service dd span{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/*保养*/
+.care{
+	margin-bottom: 30px; 
+	overflow: hidden;
+}
+.care .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.care>p{
+	text-indent: 2em;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.care>img{
+	float: left;
+}
+.care .txt{
+	float: left;
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 10px;
+	line-height: 20px;
+}
+.care .txt span{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/*question*/
+.question{
+	margin-bottom: 30px;
+}
+.question .title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(../image/product/public/bgLogo.jpg) no-repeat left center;
+}
+.question p{
+	padding-left: 30px;
+	line-height: 25px;
+}

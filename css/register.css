@@ -19,9 +19,11 @@
 .box p{
 	padding-left: 60px;
 }
-.box .tips{
+.box p.tips{
 	padding-left: 150px;
-	color: #999;
+	height: 20px;
+	color: red;
+	font-size: 12px;
 }
 .box span{
 	display: inline-block;
@@ -42,6 +44,10 @@
 	background: rgba(200,160,250,0.5);
 	color: #fff;
 }
+::-webkit-input-placeholder{
+	font-size: 10px;
+	letter-spacing: 1px;
+}
 #numChange{
 	display: inline-block;
 	border: 1px solid #fff;
@@ -49,6 +55,8 @@
 	color: #fff;
 	width: 50px;
 	height: 25px;
+	line-height: 20px;
+	text-align: center;
 	box-sizing: border-box;
 }
 .box .title{

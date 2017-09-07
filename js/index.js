@@ -2,9 +2,38 @@
 $('header').load('html/public.html #header',function(){
 	// 操作导航栏的隐藏和现显示
 	$('.subNav').mouseenter(function(){
-		$('.subNavInfo').stop().slideDown(200)
+		$('.subNavInfo').stop().slideDown(200);
+		$(this).find('i').html('&#xe8c9;');
 	}).mouseleave(function(){
-		$('.subNavInfo').stop().slideUp(50)
+		$('.subNavInfo').stop().slideUp(50);
+		$(this).find('i').html('&#xe8ca;');
+	})
+	// 从cookie获取数据,如果有就为登录状态,没有为未登录状态
+	var data = getCookie('userList');
+	if( data.phone ){
+		console.log(2)
+		$('#welcomeWord>span').html(data.phone)
+		$('#login').hide();
+		$('#register').hide();
+		$('#leaveLogin').show();
+	}else{
+		$('#login').show();
+		$('#register').show();
+		$('#leaveLogin').hide();
+	}
+	$('#leaveLogin').click(function(){
+		removeCookie('userList');
+		var data = getCookie('userList');
+		if( data.phone ){
+			$('#welcomeWord>span').html(data.phone)
+			$('#login').hide();
+			$('#register').hide();
+			$('#leaveLogin').show();
+		}else{
+			$('#login').show();
+			$('#register').show();
+			$('#leaveLogin').hide();
+		}
 	})
 })
 $('.experienceCenter').load('html/public.html #experienceCenter',function(){
@@ -45,6 +74,13 @@ function bannerChange(){
 	$('.bannerList>li').eq(index).addClass('bannerListShow').siblings().removeClass('bannerListShow');
 	$(".bannerImg>li").eq(index).fadeIn(1000).siblings().fadeOut(1000);
 }
+
+$('.bannerList>li').click(function(){
+	$(this).addClass('bannerListShow').siblings().removeClass('bannerListShow');
+	index = $(this).index()-1;
+	bannerChange()
+})
+
 bannerTimer = setInterval(bannerChange,3000);
 $('.banner').mouseenter(function(){
 	clearInterval(bannerTimer);

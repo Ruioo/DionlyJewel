@@ -22,22 +22,24 @@
 				<p>
 					<span>手机号码</span>
 					<input type="text" placeholder=" 11位数字">
-					<p class='tips'>qwer</p>
+					<p class='tips'></p>
 				</p>
 			</div>
 			<div class="messageConfirm">
 				<p>
 					<span>短信验证</span>
-					<input type="text">
+					<input class="messTxt" type="text" placeholder=" 六位数字">
 					<input type="button" value="获取验证码">
+					<p class='tips'></p>
 				</p>
 			</div>
 			<div class="idenCode">
 				<p>
 					<span>验证码</span>
-					<input type="text" placeholder=" 不区分大小写">
+					<input class="idencode" type="text" placeholder=" 不区分大小写">
 					<span id="numChange">QWER</span>
 					<input type="button" value="换一张">
+					<p class='tips'></p>
 				</p>
 				
 			</div>
@@ -45,7 +47,7 @@
 				<p>
 					<span>设置密码</span>
 					<input type="text" placeholder=" 6-20位必须包含字母和数字">
-					<p class='tips'>qwer</p>
+					<p class='tips'></p>
 				</p>
 				
 			</div>
@@ -53,7 +55,7 @@
 				<p>
 					<span>确认密码</span>
 					<input type="text" placeholder=" 6-20位必须包含字母和数字">
-					<p class='tips'>qwer</p>
+					<p class='tips'></p>
 				</p>
 				
 			</div>
@@ -62,7 +64,7 @@
 				我已阅读并同意《<a href="#">戴欧妮珠宝用户服务协议</a>》
 			</div>
 			<div class="vipRes">
-				<input type="button" value="会员注册">
+				<input id="vipRegister" type="button" value="会员注册">
 				<p>使用第三方账号登录</p>
 			</div>
 			<div class="otherLogin">
@@ -77,4 +79,6 @@
 	<div class="sideBar"></div>
 </body>
 </html>
+<script src='../js/cookie.js'></script>
 <script src='../js/public.js'></script>
+<script src='../js/register.js'></script>

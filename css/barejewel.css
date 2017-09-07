@@ -80,6 +80,7 @@
 	width: 1200px;
 	display: flex;
 	height: 40px;
+	font-size: 12px;
 	border-bottom:1px dashed #cecece;
 }
 .jewelChooseItems>div>.certNo{

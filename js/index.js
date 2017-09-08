@@ -10,8 +10,9 @@ $('header').load('html/public.html #header',function(){
 	})
 	// 从cookie获取数据,如果有就为登录状态,没有为未登录状态
 	var data = getCookie('userList');
-	if( data.phone ){
-		console.log(2)
+	var flag = getCookie('res');
+
+	if( data.phone && flag.result == "ok" ){
 		$('#welcomeWord>span').html(data.phone)
 		$('#login').hide();
 		$('#register').hide();
@@ -22,19 +23,25 @@ $('header').load('html/public.html #header',function(){
 		$('#leaveLogin').hide();
 	}
 	$('#leaveLogin').click(function(){
-		removeCookie('userList');
-		var data = getCookie('userList');
-		if( data.phone ){
-			$('#welcomeWord>span').html(data.phone)
-			$('#login').hide();
-			$('#register').hide();
-			$('#leaveLogin').show();
-		}else{
-			$('#login').show();
-			$('#register').show();
-			$('#leaveLogin').hide();
+		var flag = {
+			"result" : "no",
 		}
+		flag = JSON.stringify(flag)
+		setCookie("res",flag)
+		location.reload();
+		$('#login').show();
+		$('#register').show();
+		$('#leaveLogin').hide();
+		$('#welcomeWord>span').html('你好')
 	})
+	//  搜索按钮
+	$('.searchBtn').click(function(){
+		location.href = `http://localhost/170901/66/html/search.html?key=${$('.searchIpt').val()}`;
+	})
+	$('.keyword>li').click(function(){
+		location.href = `http://localhost/170901/66/html/search.html?key=${$(this).html()}`;
+	})
+
 })
 $('.experienceCenter').load('html/public.html #experienceCenter',function(){
 	//  操作体验中心的一些交互效果
@@ -91,4 +98,19 @@ $('.banner').mouseenter(function(){
 // 点击参数选取裸钻
 $('.part2>div>div>button').click(function(){
 	$(this).addClass('buttonCurrent').siblings().removeClass('buttonCurrent')
+})
+
+// 点击搜索裸钻
+$('#bareRingSearch').click(function(){
+	if( $('.color').find('.buttonCurrent') ){
+		var color = $('.color').find('.buttonCurrent').val(); 
+	}
+	if( $('.polish').find('.buttonCurrent') ){
+		var polish = $('.polish').find('.buttonCurrent').val(); 
+	}
+	if( $('.clarity').find('.buttonCurrent') ){
+		var clarity = $('.clarity').find('.buttonCurrent').val(); 
+	}
+	var hrefAdd = `?color=${color}&polish=${polish}&clarity=${clarity}`
+	location.href = `http://localhost/170901/66/html/bareJewel.html${hrefAdd}`;
 })

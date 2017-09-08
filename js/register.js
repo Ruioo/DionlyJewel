@@ -78,7 +78,7 @@ $('#vipRegister').click(function(){
 			"password" : $('.password input').val()
 		}
 		userInfo = JSON.stringify(userInfo);
-		setCookie("userList",userInfo)
+		setCookie("userList",userInfo,1000000)
 		location.href = "http://localhost/170901/66/html/login.html"
 	}
 })

@@ -27,7 +27,6 @@ function getCookie(key){
 		for (var i = 0 ; i < arr.length ; i++) {
 			var item = arr[i].split("=");
 			if( item[0] == key ){
-				console.log(JSON.parse( item[1] ))
 				return JSON.parse( item[1] );
 			}
 		}

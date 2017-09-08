@@ -37,13 +37,10 @@
 /*mainLeft mainRight*/
 .mainLeft{
 	width: 240px;
-	/*height: 1000px;*/
 	float: left;
-	/*background: #eee;*/
 }
 .mainRight{
 	width: 925px;
-	/*height: 1600px;*/
 	float: right;
 }
 
@@ -83,14 +80,7 @@
 	height: 13px;
 	cursor: pointer;
 	margin-right: 10px;
-	background: url(../image/madeRing/+.jpg) no-repeat left center;
-}
-.sort p:nth-child(4) span{
 	background: url(../image/madeRing/-.jpg) no-repeat left center;
-}
-.sort p:nth-child(4) a{
-	color: red;
-	font-size: 14px;
 }
 .sort ul{
 	width: 160px;
@@ -99,118 +89,14 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	background: #fafafa;
-	display: none;
 	border-top: 1px dashed #d1d1d1;
 	border-bottom: 1px dashed #d1d1d1;
-}
-.sort>ul:nth-child(5){
-	display: block;
 }
 .sort li{
 	width: 80px;
 	height: 30px;
 	line-height: 30px;
 	float: left;
-}
-.sort li:hover{
-	color: #e13a68;
-	cursor: pointer;
-}
-
-
-/*menus */
-.menus{
-	width: 910px;
-	/*height: 160px;*/
-	/*overflow: hidden;*/
-	border:1px solid #cecece;
-	background:#f8f8f8;
-	padding: 10px 5px 10px 5px;
-}
-.menus>div{
-	display: flex;
-	height: 40px;
-	line-height: 40px;
-	border-bottom:1px dashed #cecece;
-}
-.menus>div:last-child{
-	border:none;
-}
-.menus>div:last-child li{
-	width: 120px;
-
-}
-.menus>div>span{
-	display: inline-block;
-	line-height: 40px;
-	width: 70px;
-	height: 40px;
-	padding-left: 20px;
-	margin-right: 10px;
-	color: #db3962;
-	font-size: 12px;
-}
-.menus ul{
-	height: 40px;
-	display: flex;
-	align-items: center;
-	line-height: 14px;
-}
-.menus div li:last-child{
-	border-right: none;
-}
-.menus li{
-	/*padding-left: 15px;*/
-	text-align: center;
-	width: 80px;
-	height: 16px;
-	cursor: pointer;
-	border-right: 1px solid #636363;
-}
-.menus li:hover{
-	color: #db3962;
-	font-weight: bold;
-}
-.menus em{
-	display: inline-block;
-	margin-left: 200px;
-	font-style: normal;
-}
-.menus .menusChoose{
-	/*display: flex;*/
-	display: none;
-}
-.menusChoose ul{
-	width: 500px;
-}
-.menusChoose li{
-	/*width: 40px;*/
-	width: auto;
-	margin-right: 20px;
-	padding: 0 10px 0 10px;
-	line-height: 30px;
-	height: 30px;
-	background: #db3962;
-	border: none;
-	color: #fff;
-	cursor: auto;
-}
-.menusChoose li:hover{
-	color: #fff;
-}
-.menusChoose input{
-	cursor: pointer;
-	border: none;
-	background: #fff;
-	width: 15px;
-	padding-left: 4px;
-	text-align: center;
-}
-.clearAll{
-	border:none;
-	margin-left: 50px;
-	background: #e13a68;
-	color: #fff;
 }
 
 /*flip*/
@@ -267,31 +153,6 @@
 .flip .currentLi{
 	background: #d8d8d8;
 	color: #db3962;
-}
-
-/*title*/
-.itemsTitle{
-	width: 920px;
-	height: 31px;
-	padding-top: 4px;
-	margin-bottom: 20px;
-	border:1px solid #cecece;
-	background-image:linear-gradient(to top, #e1e1e1, #ffffff);
-}
-.itemsTitle li{
-	text-align: center;
-	width: 75px;
-	height: 27px;
-	line-height: 27px;
-	float: left;
-	cursor: pointer;
-	border-right: 1px solid #c4c4c3;
-}
-.itemsTitle li:hover{
-	color: #e13a68;
-}
-.itemsTitle li:last-child{
-	border:none;
 }
 
 /*items*/

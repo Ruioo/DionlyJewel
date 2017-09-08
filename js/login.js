@@ -23,6 +23,11 @@ $('.vipLogin input').click(function(){
 		alert('密码错误')
 	}
 	if( uphone == $('.phoneNum input').val() && upwd == $('.password input').val() ){
+		var flag = {
+			"result" : "ok",
+		}
+		flag = JSON.stringify(flag)
+		setCookie("res",flag)
 		location.href = 'http://localhost/170901/66/index.html'
 	}
 })

@@ -10,7 +10,9 @@ $('header').load('../html/public.html #header',function(){
 	})
 	// 从cookie获取数据,如果有就为登录状态,没有为未登录状态
 	var data = getCookie('userList');
-	if( data.phone ){
+	var flag = getCookie('res');
+
+	if( data.phone && flag.result == "ok" ){
 		$('#welcomeWord>span').html(data.phone)
 		$('#login').hide();
 		$('#register').hide();
@@ -21,20 +23,28 @@ $('header').load('../html/public.html #header',function(){
 		$('#leaveLogin').hide();
 	}
 	$('#leaveLogin').click(function(){
-		removeCookie('userList');
-		var data = getCookie('userList');
-		if( data.phone ){
-			$('#welcomeWord>span').html(data.phone)
-			$('#login').hide();
-			$('#register').hide();
-			$('#leaveLogin').show();
-		}else{
-			$('#login').show();
-			$('#register').show();
-			$('#leaveLogin').hide();
+		var flag = {
+			"result" : "no",
 		}
+		flag = JSON.stringify(flag)
+		setCookie("res",flag)
+		location.reload();
+		$('#login').show();
+		$('#register').show();
+		$('#leaveLogin').hide();
+		$('#welcomeWord>span').html('你好')
 	})
-
+	//  搜索按钮
+	$('.searchBtn').click(function(){
+		var url = `http://localhost/170901/66/html/search.html?key=${$('.searchIpt').val()}`;
+		url=encodeURI(url); 
+		location.href = url;
+	})
+	$('.keyword>li').click(function(){
+		var url = `http://localhost/170901/66/html/search.html?key=${$(this).html()}`;
+		url=encodeURI(url); 
+		location.href = url;
+	})
 })
 $('.experienceCenter').load('../html/public.html #experienceCenter',function(){
 	//  操作体验中心的一些交互效果

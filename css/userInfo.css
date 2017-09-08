@@ -1,0 +1,98 @@
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+
+}
+.main .layout{
+	width: 1180px;
+	display: flex;
+	padding-top: 20px;
+}
+.main .layout>div{
+	width: 202px;
+}
+.main .layout>div>a>img{
+	width: 100%;
+	margin-top: 20px;
+}
+.main a{
+	color: #000;
+}
+.main a:hover{
+	color: #e13a68;
+}
+.left{
+	width: 200px;
+	border:1px solid #dfdfdf;
+}
+.left .title{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	background: linear-gradient(to top,#e1e1e1 0%, #fff 30%,#fff 100%)
+}
+.left .title a{
+	color: #e13a68;
+}
+.left li{
+	padding-left: 25px;
+	line-height: 30px;
+}
+.left p{
+	height: 35px;
+	line-height: 35px;
+	background: #f5f5f5;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 20px 0 20px;
+	border-bottom:1px dashed #d5d5d5;
+}
+
+/*right*/
+.main .layout .right{
+	width: 910px;
+	overflow: hidden;
+	padding:20px;
+	float: right;
+	margin-left: 28px;
+	border: 1px solid #dfdfdf;
+	border-top: 3px solid #ffc0c1;
+}
+.right .title{
+	height:45px;
+	line-height: 45px;
+	padding-left: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #dfdfdf;
+	color:#dd3962;
+}
+.right>p{
+	padding-left: 150px;
+	line-height: 40px;
+}
+.right p span{
+	display: inline-block;
+	width: 40px;
+}
+
+.hot{
+	height: 265px;
+	border:1px solid #dfdfdf;
+	width: 898px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.hot span{
+	display: inline-block;
+	height: 235px;
+	width: 50px;
+	background: url(../image/user/toLeft.jpg) no-repeat center center;
+}
+.hot span:last-child{
+	background: url(../image/user/toRight.jpg) no-repeat center center;
+}

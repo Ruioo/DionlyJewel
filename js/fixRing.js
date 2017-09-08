@@ -22,7 +22,7 @@ $.ajax({
 		var arr = res.list;
 		$('.items>div').each(function(){
 			var index = $(this).index();
-			$(this).append(`<dl><dt><a href="http://localhost/170901/66/html/productInfo.html?f=${index}"><img src="${arr[index].url}" alt=""></a><a href="#">${arr[index].name}</a></dt><dd><p>市场价：￥<span>${arr[index].mPrice}</span></p><p>商城价：￥<span>${arr[index].sPrice}</span></p></dd></dl>`)
+			$(this).append(`<dl><dt><a href="http://localhost/170901/66/html/productInfo.html?f=${index}"><img src="${arr[index].url}" alt=""></a><a href="http://localhost/170901/66/html/productInfo.html?f=${index}">${arr[index].name}</a></dt><dd><p>市场价：￥<span>${arr[index].mPrice}</span></p><p>商城价：￥<span>${arr[index].sPrice}</span></p></dd></dl>`)
 		})
 		// 翻页按钮
 		var pageCount = Math.ceil( arr.length/21 );

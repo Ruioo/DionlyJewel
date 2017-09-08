@@ -2,7 +2,11 @@
 	"list" : [
 		{
 			"name" : "爱情手镯（DBW134533D）",
-			"url" : "http://localhost/170901/66/image/fixRing/1.jpg",
+			"url" : "http://localhost/170901/66/image/product/byz/byz1.jpg",
+			"url1" : "http://localhost/170901/66/image/product/byz/byz2.jpg",
+			"url2" : "http://localhost/170901/66/image/product/byz/byz3.jpg",
+			"url3" : "http://localhost/170901/66/image/product/byz/byz4.jpg",
+			"url4" : "http://localhost/170901/66/image/product/byz/byz5.jpg",
 			"mPrice" : "19841.00",
 			"sPrice" : "10443.00",
 			"sales" : 98

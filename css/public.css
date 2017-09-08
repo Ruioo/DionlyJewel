@@ -9,12 +9,72 @@
 .layout a:hover{
 	color: #e13a68;
 }
+/*切换城市*/
+.changesites{
+	width: 650px;
+	height: 580px;
+	background: #fff;
+	position: fixed;
+	top:30px;
+	display: none;
+	z-index: 9999;
+	left:50%;
+	border-radius: 10px;
+	overflow: hidden;
+	transform: translateX(-50%);
+}
+.changesites p{
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 15px 0 15px;
+	background: #ffd9d9;
+	border-bottom: 3px solid #a30101;
+}
+.changesites p button{
+	float: right;
+	height: 35px;
+	border: none;
+	background: #ffd9d9;
+	cursor: pointer;
+	font-size: 25px;
+	color: red;
+}
+.changesites ul{
+	padding: 10px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+.changesites ul span{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+.changesites li{
+	margin-right: 10px;
+	cursor: pointer;
+	float: left;
+	line-height: 20px;
+}
+.changesites li:hover{
+	color: red;
+}
+.bodyMask{
+	width: 100%;
+	display: none;
+	position: absolute;
+	z-index: 9998;
+	background: rgba(0,0,0,0.5);
+}
+
 /*头部样式*/
 header{
 	width: 100%;
 	height: 176px;
 	margin: 0 auto;
 	font-size: 12px;
+	position: relative;
 	/*overflow: hidden;*/
 }
 	/*头部上半部分*/
@@ -30,8 +90,16 @@ header{
 	float: left;
 	margin-right: 10px;
 }
+#personInfo,#jewelryBox{
+	cursor: pointer;
+	display: inline-block;
+}
 .headRightInfo{
 	float: right;
+}
+#locationChange{
+	display: inline-block;
+	cursor: pointer;
 }
 #leaveLogin{
 	display: none;
@@ -166,6 +234,10 @@ nav .layout{
 }
 .subNavInfo ul:hover{
 	background: #000;
+}
+.subNavInfo ul li:hover,
+.subNavInfo ul h6:hover{
+	color: #e13a68;
 }
 .subNavInfo a{
 	color: #fff;

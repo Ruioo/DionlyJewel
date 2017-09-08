@@ -1,3 +1,18 @@
+// 网址传递 信息
+var name = location.href;
+name = decodeURI(name)
+name = decodeURI(name)
+var key = name.split('?')[1].split('=')[1];
+$('.menus>div').not('.menusChoose').find('li').each(function(){
+	if( key.match( $(this).html() ) ){
+		var index = $(this).parent().parent().index();
+		$(this).parent().parent().hide();
+		$('.menusChoose ul').prepend(`<li><span>${$(this).html()}</span><input class=${index} type="button" value="x"></li>`)
+		$('.menusChoose').css('display','flex')
+	}
+	
+})
+
 // sort排序里面的点击事件
 $('.sort>p span').click(function(){
 	if( $(this).parent().next().is(':hidden') ){
@@ -101,7 +116,6 @@ $.ajax({
 		})
 		// 清除所有
 		$('.menusChoose').on('click','.clearAll',function(){
-			
 			$(this).prevAll('li').find('input').each(function(index,ele){
 				var index = parseInt( $(ele).attr('class') )
 				console.log($(ele).attr('class'))
@@ -114,14 +128,11 @@ $.ajax({
 			}
 		})
 
-
 		// 左边sort筛选
 		$('.sort ul:eq(1)').find('li').click(function(){
 			var that = $(this)
 			var index = 0;
 			$('.menus li').each(function(){
-				console.log($(this).html())
-				console.log(that.html())
 				if( $(this).html() == that.html() ){
 					$(this).parent().parent().hide();
 					index = $(this).parent().parent().index();

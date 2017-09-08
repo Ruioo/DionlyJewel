@@ -45,6 +45,29 @@ $('header').load('../html/public.html #header',function(){
 		url=encodeURI(url); 
 		location.href = url;
 	})
+	// 判断我的个人信息和购物车是否可以点开
+	$('#personInfo').click(function(){
+		var flag = getCookie('res');
+		if( flag.result == 'ok' ){
+			location.href = 'http://localhost/170901/66/html/user.html'
+		}else{
+			location.href = 'http://localhost/170901/66/html/login.html'
+		}
+	})
+	$('#jewelryBox').click(function(){
+		var flag = getCookie('res');
+		if( flag.result == 'ok' ){
+			location.href = 'http://localhost/170901/66/html/cart.html'
+		}else{
+			location.href = 'http://localhost/170901/66/html/login.html'
+		}
+	})
+	// 实时显示珠宝箱里面的数量
+	var shopcart = getCookie('shopcart')
+	if( parseInt( shopcart.length ) >= 1 ){
+		$('#jewelryBoxCount').html( shopcart.length )
+	}
+	
 })
 $('.experienceCenter').load('../html/public.html #experienceCenter',function(){
 	//  操作体验中心的一些交互效果
@@ -74,7 +97,38 @@ $('.experienceCenter').load('../html/public.html #experienceCenter',function(){
 	})
 })
 $('.footNav').load('../html/public.html #footNav')
-$('.sideBar').load('../html/public.html #sideBar')
+$('.sideBar').load('../html/public.html #sideBar',function(){
+	// 蒙层的高度
+	$('.bodyMask').css('height',$('body').height())
+	// 切换城市
+	$('.changesites button').click(function(){
+		$(this).parent().parent().fadeOut(500);
+		$('.bodyMask').fadeOut(500);
+	})
+	$('#locationChange').click(function(){
+		$('.bodyMask').show();
+		$('.changesites').fadeIn(500);
+	})
+	$('.changesites li').click(function(){
+		$(this).parent().parent().fadeOut(500);
+		$('.bodyMask').fadeOut(500);
+		$('#loactionTxt').html( $(this).html() )
+	})
+
+	// nav 传值到 madeRing
+	$('.madeRingNav li,.madeRingNav h6').click(function(){
+		var url = 'http://localhost/170901/66/html/madeRing.html?name='+$(this).html();
+		url=encodeURI(url); 
+		location.href = url;
+	})
+	// nav 传值到 gold
+	$('.goldNav li,.goldNav h6').click(function(){
+		var url = 'http://localhost/170901/66/html/gold.html?name='+$(this).html();
+		url=encodeURI(url); 
+		location.href = url;
+	})
+
+})
 
 
 

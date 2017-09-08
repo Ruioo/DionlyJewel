@@ -119,6 +119,7 @@
 	height: 160px;
 	border:1px solid #cecece;
 	background:#f8f8f8;
+	overflow: hidden;
 	padding: 10px 5px 10px 5px;
 }
 .menus>div{
@@ -171,8 +172,45 @@
 	margin-left: 200px;
 	font-style: normal;
 }
+.menus .menusChoose{
+	/*display: flex;*/
+	display: none;
+}
+.menusChoose ul{
+	width: 500px;
+}
+.menusChoose li{
+	/*width: 40px;*/
+	width: auto;
+	margin-right: 20px;
+	padding: 0 10px 0 10px;
+	line-height: 30px;
+	height: 30px;
+	background: #db3962;
+	border: none;
+	color: #fff;
+	cursor: auto;
+}
+.menusChoose li:hover{
+	color: #fff;
+}
+.menusChoose input{
+	cursor: pointer;
+	border: none;
+	background: #fff;
+	width: 15px;
+	padding-left: 4px;
+	text-align: center;
+}
+.clearAll{
+	border:none;
+	margin-left: 50px;
+	background: #e13a68;
+	color: #fff;
+}
 
-/*flip*/
+
+
 /*flip*/
 .flip,.flip2{
 	width: 920px;

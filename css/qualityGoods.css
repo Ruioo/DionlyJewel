@@ -1,0 +1,26 @@
+.main{
+	width: 1180px;
+	height: 500px;
+	margin: 50px auto;
+	border: 1px solid #dfdfdf;
+	text-align: center;
+	font-size: 12px;
+	line-height: 25px;
+}
+p.title{
+	
+}
+.main>p{
+	width: 600px;
+	margin: 50px auto;
+}
+.main button{
+	border: none;
+}
+.mian .last{
+	text-align: right;
+}
+.last span{
+	display: block;
+	text-align: right;
+}

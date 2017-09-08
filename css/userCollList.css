@@ -55,7 +55,8 @@
 /*right*/
 .main .layout .right{
 	width: 910px;
-	height: 450px;
+	/*height: 450px;*/
+	height: auto;
 	overflow: hidden;
 	padding:20px;
 	float: right;
@@ -71,33 +72,39 @@
 	border-bottom: 1px solid #dfdfdf;
 	color:#dd3962;
 }
-.right>p{
-	padding-left: 150px;
+.right li{
+	float: left;
+	text-align: center;
+}
+.listTitle li:nth-child(1),
+.items li:nth-child(1){width: 200px;}
+.listTitle li:nth-child(2),
+.items li:nth-child(2){width: 500px;}
+.listTitle li:nth-child(3),
+.items li:nth-child(3){width: 135px;}
+
+.listTitle{
+	height: 40px;
 	line-height: 40px;
 }
-.right p span{
-	display: inline-block;
-	width: 40px;
+.items{
+	background: #f7f7f7;
+	overflow: hidden;
+	height: 60px;
+	padding: 10px 0 5px 0;
+	line-height: 50px;
 }
-.submit{
-	background: red;
-	color: #fff;
-	margin-right: 30px;
+.items img{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
 }
-.reset{
-	background: #dcdcdc;
-}
-.submit,.reset{
-	width: 90px;
-	height: 30px;
-	border-radius: 4px;
+.items input{
 	border: none;
+	background: #f7f7f7;
 	cursor: pointer;
-	margin-bottom: 20px;
 }
-.right>span{
-	display: block;
-}
+
 
 /*hot*/
 .hot{

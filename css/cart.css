@@ -1,0 +1,96 @@
+.main{
+	width: 100%;
+	padding: 20px 0 20px 0;
+	background: #fef1ef;
+}
+.main a{
+	color: #000;
+}
+.main a:hover{
+	color: red;
+}
+.main .layout{
+	width: 1140px;
+	border: 1px solid #dedede;
+	border-top: 3px solid #ffc0c1;
+	padding: 20px;
+	background: #fff;
+}
+div.title{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+	background: url(../image/cart/bg.jpg) no-repeat left center;
+	border-bottom:1px solid #dedede;
+}
+.main li{
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+}
+.box ul{
+	width: 100%;
+	height: auto;
+	padding: 5px 0 5px 0;
+	overflow: hidden;
+	background: #f7f7f7;
+	margin-bottom: 10px;
+}
+.items li{
+	height: 120px;
+	line-height: 120px;
+}
+.items li{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+.items li input[type=button]{
+	border: none;
+	background: #f7f7f7;
+	cursor: pointer;
+}
+.main ul li:nth-child(1){width: 130px;}
+.main ul li:nth-child(2){width: 320px;}
+.main ul li:nth-child(3){width: 90px;}
+.main ul li:nth-child(4){width: 180px;}
+.main ul li:nth-child(5){width: 120px;}
+.main ul li:nth-child(6){width: 120px;}
+.main ul li:nth-child(7){width: 120px;}
+
+.main li img{
+	width: 120px;
+	height: 120px;
+}
+
+.count{
+	background: #f7f7f7;
+}
+.count p:first-child{
+	float: left;
+}
+.count p:last-child{
+	float: right;
+}
+.count p:first-child input{
+	background: #fff;
+	border: none;
+	cursor: pointer;
+}
+.count p:last-child input{
+	border: none;
+	background: #cc4a4c;
+	color: #fff;
+	font-size: 12px;
+	width: 100px;
+	cursor: pointer;
+	margin-left: 15px;
+	height: 30px;
+}
+.count p:last-child span:nth-child(3){
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+}

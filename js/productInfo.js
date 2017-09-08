@@ -57,8 +57,8 @@ $.ajax({
 		}
 		// 获取商品详情的名称和价格
 		$('.proName').html(info.name)
-		$('.proMprice').html('￥' + info.mPrice)
-		$('.proSprice').html('￥' + info.sPrice)
+		$('.proMprice').html(info.mPrice)
+		$('.proSprice').html(info.sPrice)
 		// 钻石材质的按钮的点击样式更改
 		$('.material>button').click(function(){
 			$(this).addClass('currentButton').siblings().removeClass('currentButton')
@@ -91,6 +91,8 @@ $.ajax({
 
 	}
 })
+
+// 放大镜
 $(".small").on({
 	mouseenter : function(){
 		$(".big").show();
@@ -126,4 +128,26 @@ $(".small").on({
 			top : -bigImgY
 		})
 	}
+})
+
+
+// 加入购物车	
+	
+$('.twoButton').on('click','.addShopCar',function(){
+	var arr = [];
+	var _json = {
+		"src" : $('.move>img').attr('src'),
+		"name" : $('.proName').html(),
+		"hand" : $('.handNum').val(),
+		"words" : $('.lettering input').val(),
+		"mPrice" : $('.proMprice').html(),
+		"sPrice" : $('.proSprice').html()
+	}
+	var info = getCookie('shopcart')
+	if( info.length != 0 ){
+		arr = info;
+	}
+	arr.push(_json);
+	setCookie("shopcart",JSON.stringify(arr),1000000);
+	alert('加入购物车成功')
 })

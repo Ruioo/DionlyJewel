@@ -5,7 +5,7 @@
 	<title>个人信息 - 戴欧妮钻石</title>
 	<link rel="stylesheet" href="../css/all.css">
 	<link rel="stylesheet" href="../css/public.css">
-	<link rel="stylesheet" href="../css/userInfo.css">
+	<link rel="stylesheet" href="../css/userCollList.css">
 	<link rel="stylesheet" href="../iconfont/iconfont.css">
 	<script src='../js/jquery.min.js'></script>
 </head>
@@ -42,49 +42,21 @@
 			</div>
 			
 			<div class="right">
-				<div class="title">个人信息</div>
-				<p>
-					<span>姓名:</span>
-					<input id="name" type="text">
-				</p>
-				<p>
-					<span>性别:</span>
-					<input type="radio" name="sex" value="男">男
-					<input type="radio" name="sex" value="女">女
-				</p>
-				<p>
-					<span>生日:</span>
-					<select name="birthyear" id="birthyear">
-					</select>
-					<select name="birthmonth" id="birthmonth">
-					</select>
-					<select name="birthday" id="birthday">
-					</select>
-				</p>
-				<p>
-					<span>QQ:</span>
-					<input id="qq" type="text">
-				</p>
-				<p>
-					<span>微信:</span>
-					<input id="weixin" type="text">
-				</p>
-				<p>
-					<span>手机:</span>
-					<input id="phone" type="text">
-				</p>
-				<p>
-					<span>邮箱:</span>
-					<input id="mail" type="text">
-				</p>
-				<p>
-					<input class="submit" type="submit" value="提交信息">
-					<input class="reset" type="reset" value="重置信息">
-				</p>
-				<span>注意事项：</span>
-				<span>1. 请选择正确的生日，我们将会有生日礼物派发；</span>
-				<span>2. 请填写正确的微信，我们将会不定期派发红包；</span>
-				<span>3. 请填写正确的手机，我们不定期会有手机抽奖活动。</span>
+				<div class="title">我的收藏</div>
+				<ul class="listTitle">
+					<li>图片</li>
+					<li>名称</li>
+					<li>日期</li>
+					<li>操作</li>
+				</ul>
+				<ul class="items">
+					<li><a href="#"><img src="../image/fixRing/1.jpg" alt=""></a></li>
+					<li><a href="#">DRW124514D，相伴一生（成品）</a></li>
+					<li>2017-09-08</li>
+					<li>
+						<input class="del" type="button" value="删除">
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -95,4 +67,4 @@
 </html>
 <script src='../js/public.js'></script>
 <script src='../js/cookie.js'></script>
-<script src='../js/userInfo.js'></script>
+<script src='../js/userCollList.js'></script>

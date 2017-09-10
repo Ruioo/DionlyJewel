@@ -56,7 +56,6 @@
 /*right*/
 .main .layout .right{
 	width: 910px;
-	height: 450px;
 	overflow: hidden;
 	padding:20px;
 	float: right;
@@ -64,47 +63,35 @@
 	border: 1px solid #dfdfdf;
 	border-top: 3px solid #ffc0c1;
 }
-.right .title{
-	height:45px;
-	line-height: 45px;
+.right div.title{
+	height: 35px;
+	/*margin-top: 135px;*/
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	line-height: 35px;
 	padding-left: 15px;
-	font-weight: bold;
-	border-bottom: 1px solid #dfdfdf;
-	color:#dd3962;
+	padding-right: 15px;
+	width: 880px;
+	background: linear-gradient(to top,#cecece 0%,#fff 40%,#fff 100%)
 }
-.right>p{
-	padding-left: 150px;
+.allOrder{
+	margin-bottom: 30px;
+}
+.allOrder ul{
+	display: flex;
+	justify-content: space-around;
+}
+.allOrder ul{
+	text-align: center;
+	height: 40px;
 	line-height: 40px;
-}
-.right p span{
-	display: inline-block;
-	width: 40px;
-}
-.submit{
-	background: red;
-	color: #fff;
-	margin-right: 30px;
-}
-.reset{
-	background: #dcdcdc;
-}
-.submit,.reset{
-	width: 90px;
-	height: 30px;
-	border-radius: 4px;
-	border: none;
-	cursor: pointer;
-	margin-bottom: 20px;
-}
-.right>span{
-	display: block;
+	background: #f7f7f7;
 }
 
-/*hot*/
+
 .hot{
 	height: 265px;
 	border:1px solid #dfdfdf;
-	width: 898px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;

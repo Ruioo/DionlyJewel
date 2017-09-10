@@ -2,16 +2,19 @@
 var name = location.href;
 name = decodeURI(name)
 name = decodeURI(name)
-var key = name.split('?')[1].split('=')[1];
-$('.menus>div').not('.menusChoose').find('li').each(function(){
-	if( key.match( $(this).html() ) ){
-		var index = $(this).parent().parent().index();
-		$(this).parent().parent().hide();
-		$('.menusChoose ul').prepend(`<li><span>${$(this).html()}</span><input class=${index} type="button" value="x"></li>`)
-		$('.menusChoose').css('display','flex')
-	}
-	
-})
+if( name.split('?')[1] ){
+	var key = name.split('?')[1].split('=')[1];
+	$('.menus>div').not('.menusChoose').find('li').each(function(){
+		if( key.match( $(this).html() ) ){
+			var index = $(this).parent().parent().index();
+			$(this).parent().parent().hide();
+			$('.menusChoose ul').prepend(`<li><span>${$(this).html()}</span><input class=${index} type="button" value="x"></li>`)
+			$('.menusChoose').css('display','flex')
+		}
+		
+	})
+}
+
 
 // sort排序里面的点击事件
 $('.sort>p span').click(function(){

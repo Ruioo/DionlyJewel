@@ -129,19 +129,22 @@ $(".small").on({
 		})
 	}
 })
-
-
 // 加入购物车	
 	
 $('.twoButton').on('click','.addShopCar',function(){
 	var arr = [];
+	var href = location.href.split('?');
+	var left = href[1].split('=')[0]
+	var right = href[1].split('=')[1]
 	var _json = {
 		"src" : $('.move>img').attr('src'),
 		"name" : $('.proName').html(),
 		"hand" : $('.handNum').val(),
 		"words" : $('.lettering input').val(),
 		"mPrice" : $('.proMprice').html(),
-		"sPrice" : $('.proSprice').html()
+		"sPrice" : $('.proSprice').html(),
+		"left" : left,
+		"right" : right
 	}
 	var info = getCookie('shopcart')
 	if( info.length != 0 ){
@@ -150,4 +153,55 @@ $('.twoButton').on('click','.addShopCar',function(){
 	arr.push(_json);
 	setCookie("shopcart",JSON.stringify(arr),1000000);
 	alert('加入购物车成功')
+})
+
+// 滚动title跟着走
+$(window).scroll(function(e){
+	var e = e || event;
+	sTop = $(document).scrollTop();
+	if( parseInt( $('.bottomRight>ul.title').offset().top ) <= parseInt( sTop ) ){
+		$('.bottomRight>ul.title').css({
+			"display" : "block",
+			"position" : "fixed",
+			"top" : 0
+		})
+	}
+	if( sTop < 906 ){
+		$('.bottomRight>ul.title').css({
+			'position' : 'static'
+		})
+	}
+})
+
+$('.bottomRight>ul.title').find('li').eq(0).click(function(){
+	$(document).scrollTop(906);
+})
+$('.bottomRight>ul.title').find('li').eq(1).click(function(){
+	$(document).scrollTop(4038);
+})
+$('.bottomRight>ul.title').find('li').eq(2).click(function(){
+	$(document).scrollTop(7038);
+})
+
+// 加入收藏
+$('.twoButton').on('click','.addCollection',function(){
+	var arr = [];
+	var href = location.href.split('?');
+	var left = href[1].split('=')[0]
+	var right = href[1].split('=')[1]
+	var time = new Date().toLocaleDateString();
+	var _json = {
+		"src" : $('.move>img').attr('src'),
+		"name" : $('.proName').html(),
+		"time" : time,
+		"left" : left,
+		"right" : right
+	}
+	var info = getCookie('collection')
+	if( info.length != 0 ){
+		arr = info;
+	}
+	arr.push(_json);
+	setCookie("collection",JSON.stringify(arr),1000000);
+	alert('加入收藏成功')
 })

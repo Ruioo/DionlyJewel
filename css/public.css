@@ -456,7 +456,7 @@ nav .layout{
 }
 
 /*sideBar*/
-.sideBar{
+#sideBar{
 	width: 64px;
 	height: 394px;
 	position: fixed;
@@ -465,7 +465,7 @@ nav .layout{
 	top: 150px;
 	/*display: none;*/
 }
-.sideBar li{
+#sideBar>ul li{
 	width: 64px;
 	height: 64px;
 	background: #c11e20;
@@ -477,22 +477,22 @@ nav .layout{
 	color: #fff;
 	cursor: pointer;
 }
-.sideBar li:hover{
+#sideBar>ul li:hover{
 	background: rgba(193,30,32,0.7);
 }
-.sideBar i{
+#sideBar i{
 	font-size: 26px;
 }
-.sideBar span{
+#sideBar span{
 	font-size: 12px;
 }
-.sideBar li:nth-child(6){
+#sideBar>ul li:nth-child(6){
 	margin-bottom: 0;
 }
-.sideBar li:nth-child(5){
+#sideBar>ul li:nth-child(5){
 	position: relative;
 }
-.sideBar li:nth-child(5):hover .sideQRCode{
+#sideBar>ul li:nth-child(5):hover .sideQRCode{
 	display: block;
 }
 .sideQRCode{
@@ -510,4 +510,75 @@ nav .layout{
 	transform: rotate(90deg);
 	right: -19px;
 	top: 60px;
+}
+#talk{
+	width:410px;
+	height: 500px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	display: none;
+}
+#talk #title{
+	height: 50px;
+	color: #fff;
+	margin-bottom: 30px;
+	background: linear-gradient(to top,#4a9bf0,#65b7f4)
+}
+#talk #title ul{
+	float: right;
+	display: flex;
+	justify-content: space-around;
+	line-height: 50px;
+	width: 70px;
+	padding-right: 5px;
+	color: #fff;
+}
+#talk #title li{
+	cursor: pointer;
+}
+#talk #title ul li:nth-child(1){
+	margin-top:-3px; 
+}
+#talk #title ul li:nth-child(3){
+	padding-top: 1px;
+}
+#talk>p{
+	width: 300px;
+	line-height: 50px;
+	margin: 0 auto;
+	vertical-align: top;
+}
+#talk span{
+	display: inline-block;
+	width: 50px;
+	text-align: right;
+}
+#talk input[type=text]{
+	width: 220px;
+}
+#talk button{
+	width: 50px;
+	height: 30px;
+	margin-left: 50%;
+	cursor: pointer;
+	transform: translateX(-50%);
+	border: 1px solid #dedede;
+	background: none;
+}
+#smallkefu{
+	width: 100px;
+	position: fixed;
+	display: none;
+	right: 0;
+	text-align: center;
+	line-height: 30px;
+	bottom: 0;
+	height: 30px;
+	cursor: pointer;
+	background: linear-gradient(to top,#4a9bf0,#65b7f4)
 }

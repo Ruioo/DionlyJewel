@@ -134,7 +134,7 @@
 	line-height: 35px;
 	padding-left: 15px;
 	padding-right: 15px;
-	width: 870px;
+	width: 880px;
 	background: linear-gradient(to top,#cecece 0%,#fff 40%,#fff 100%)
 }
 p.title span{
@@ -149,15 +149,15 @@ p.title a{
 	margin: 20px 0 20px 0;
 }
 .recently{
-	width: 870px;
+	/*width: 870px;*/
 	overflow: hidden;
 }
 .recently>div{
-	width: 425px;
+	width: 440px;
 }
 .recently p.title{
-	width: 395px;
-	margin-top: 0
+	width: 410px;
+	margin-top: 0px;
 }
 .recenCollect{
 	float: left;
@@ -186,7 +186,6 @@ p.title a{
 .hot{
 	height: 265px;
 	border:1px solid #dfdfdf;
-	width: 898px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;

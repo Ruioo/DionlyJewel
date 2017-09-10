@@ -72,32 +72,18 @@
 	border-bottom: 1px solid #dfdfdf;
 	color:#dd3962;
 }
-.right>p{
-	padding-left: 150px;
+.right p{
+	padding-left: 50px;
 	line-height: 40px;
+	height: 40px;
 }
-.right p span{
+.right span{
 	display: inline-block;
-	width: 40px;
+	height: 40px;
+	width: 100px;
 }
-.submit{
-	background: red;
-	color: #fff;
-	margin-right: 30px;
-}
-.reset{
-	background: #dcdcdc;
-}
-.submit,.reset{
-	width: 90px;
-	height: 30px;
-	border-radius: 4px;
-	border: none;
-	cursor: pointer;
-	margin-bottom: 20px;
-}
-.right>span{
-	display: block;
+.right p:last-child{
+	padding-left: 100px;
 }
 
 /*hot*/

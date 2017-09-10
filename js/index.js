@@ -116,6 +116,50 @@ $('.sideBar').load('html/public.html #sideBar',function(){
 		$('.bodyMask').fadeOut(500);
 		$('#loactionTxt').html( $(this).html() )
 	})
+
+	// nav 传值到 madeRing
+	$('.madeRingNav li,.madeRingNav h6').click(function(){
+		var url = 'http://localhost/170901/66/html/madeRing.html?name='+$(this).html();
+		url=encodeURI(url); 
+		location.href = url;
+	})
+	// nav 传值到 gold
+	$('.goldNav li,.goldNav h6').click(function(){
+		var url = 'http://localhost/170901/66/html/gold.html?name='+$(this).html();
+		url=encodeURI(url); 
+		location.href = url;
+	})
+	
+	// sidebar 的效果
+	$('.toTop').click(function(){
+		$('body,html').animate({
+			"scrollTop" : 0
+		})
+	})
+
+	$('.fuwu').click(function(){
+		$("#talk").show();
+	})
+	$('#talk #title li').eq(0).click(function(){
+		$("#talk").hide();
+		$('#smallkefu').show();
+		$('#smallkefu').html( $('.kefuname').html() )
+	})
+	$('#talk #title li').eq(1).click(function(){
+		console.log(  $('#talk').css('height') )
+		if( $('#talk').css('height') == '500px' ){
+			$('#talk').css('height','600')
+		}else{
+			$('#talk').css('height','500')
+		}
+	})
+	$('#talk #title li').eq(2).click(function(){
+		$("#talk").hide();
+	})
+	$('#smallkefu').click(function(){
+		$("#talk").show();
+		$('#smallkefu').hide();
+	})
 })
 
 // 轮播图
@@ -160,3 +204,7 @@ $('#bareRingSearch').click(function(){
 	location.href = `http://localhost/170901/66/html/bareJewel.html${hrefAdd}`;
 })
 
+$('.part3 li,.part5 li,.part6 li,.part8 li,.part9 li').click(function(){
+	var url = $(this).children().html()
+	location.href = 'http://localhost/170901/66/html/search.html?key=' + url;
+})

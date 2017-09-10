@@ -128,6 +128,36 @@ $('.sideBar').load('../html/public.html #sideBar',function(){
 		location.href = url;
 	})
 
+	// sidebar 的效果
+	$('.toTop').click(function(){
+		$('body,html').animate({
+			"scrollTop" : 0
+		})
+	})
+
+	$('.fuwu').click(function(){
+		$("#talk").show();
+	})
+	$('#talk #title li').eq(0).click(function(){
+		$("#talk").hide();
+		$('#smallkefu').show();
+		$('#smallkefu').html( $('.kefuname').html() )
+	})
+	$('#talk #title li').eq(1).click(function(){
+		console.log(  $('#talk').css('height') )
+		if( $('#talk').css('height') == '500px' ){
+			$('#talk').css('height','600')
+		}else{
+			$('#talk').css('height','500')
+		}
+	})
+	$('#talk #title li').eq(2).click(function(){
+		$("#talk").hide();
+	})
+	$('#smallkefu').click(function(){
+		$("#talk").show();
+		$('#smallkefu').hide();
+	})
 })
 
 

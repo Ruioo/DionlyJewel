@@ -1,0 +1,94 @@
+img{
+	margin: 0 auto;
+}
+.main{
+	width: 998px;
+	height: 298px;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+.main a{
+	color: #000;
+}
+.main a:hover{
+	color: red;
+}
+p.title{
+	height: 27px;
+	line-height: 27px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 20px;
+	background: #ffd9da;
+	font-weight: bold;
+}
+.main p:nth-child(2) span{
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+}
+.main p:nth-child(2){
+	text-align: center;
+	line-height: 50px;
+}
+.main p:nth-child(3){
+	text-align: center;
+}
+.pay{
+	height: 114px;
+	line-height: 114px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ededed;
+	margin-top: 20px;
+}
+.pay p{
+	width: 240px;
+	height: 47px;
+	cursor: pointer;
+	line-height: 47px;
+	text-align: center;
+	margin-right: 5px;
+	background: #c11e1f;
+	color: #fff;
+	font-size: 24px;
+}
+.otherPay{
+	display: block;
+	height: 35px;
+	text-align:center;
+	line-height: 35px;
+	background: #ffd8d9;
+}
+.main div:last-child{
+	background: #ededed;
+	height: 41px;
+}
+.otherPay{
+	cursor: pointer;
+}
+#otherPay{
+	width: 998px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+	border: 1px solid #ccc;
+}
+#otherPay .title{
+	margin-bottom: 20px;
+}
+#otherPay ul{
+	overflow: hidden;
+}
+#otherPay li{
+	width: 190px;
+	height: 45px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #dedede;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
